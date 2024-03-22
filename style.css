@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  background-color: #009C87;
+  color: white !important;
+}
+
+.icon {
+  width: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: auto;
+  margin: auto;
+}
+
+header {
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
+  border-bottom: 1px solid #666666;
+  height: 15vh;
+}
+header section {
+  background-color: #666666;
+  width: 15vw;
+}
+header .logo {
+  top: 5px;
+  left: 5px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+header .userSettings {
+  color: white;
+  font-size: small;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+header .topNav {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+}
+header .topNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header .topNav ul li {
+  padding: 10px;
+  margin: 0;
+  color: #009C87;
+  cursor: pointer;
+  font-style: bold;
+}
+header .topNav ul li:hover {
+  background-color: #009C87;
+  color: white;
+}
+
+main .navBody ul {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid #666666;
+}
+main .navBody ul li {
+  padding: 10px 20px;
+  margin: 0;
+  color: #009C87;
+  cursor: pointer;
+  font-style: bold;
+  border-right: 0.5px solid #666666;
+}
+main .navBody ul li:hover {
+  background-color: #009C87;
+  color: white;
+}
+main .subNav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  list-style: none;
+  border-bottom: 0.5px solid #666666;
+}
+main .subNav ul {
+  display: flex;
+  flex-direction: row;
+}
+main .subNav ul li {
+  padding: 20px;
+  margin: 0;
+  color: #009C87;
+  cursor: pointer;
+  font-weight: bold;
+  border-right: 0.5px solid #666666;
+}
+main .subNav ul li:hover {
+  background-color: #009C87;
+  color: white;
+}
+main aside {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  background-color: #EEEEEE;
+  border: 0.5px solid #666666;
+  width: 15vw;
+  font-size: small;
+}
+main aside #asideTop {
+  background-color: #333333;
+}
+main aside #asideTop img {
+  float: right;
+}
+main aside #asideBottom {
+  display: flex;
+  flex-direction: row;
+}
+main aside .asideNav {
+  display: flex;
+}
+main aside .asideNav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main aside .asideNav ul li {
+  padding: 5px;
+  cursor: pointer;
+}
+main aside .asideNav ul li:hover {
+  background-color: #009C87;
+  color: white;
+}
+main .courseNotice {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 10px;
+}
+main .courseNotice p {
+  font-size: small;
+}
+main .mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  gap: 50px;
+  padding: 10px;
+}
+main .mainContainer .mainContent {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid #666666;
+  background-color: #EEEEEE;
+}
+main .mainContainer .mainContent .banner {
+  width: 100%;
+  height: 50px;
+  background-image: url("images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .mainContainer .mainContent .banner .linkCircle {
+  width: auto;
+  height: 45px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+main .mainContainer .mainContent .banner .linkCircle:hover {
+  width: 6%;
+  z-index: 1;
+  height: auto;
+}
+main .mainContainer .mainContent .container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 20px;
+}
+main .mainContainer .mainContent .container #announcements, main .mainContainer .mainContent .container #absence, main .mainContainer .mainContent .container #stickies, main .mainContainer .mainContent .container #links {
+  border: 0.5px solid #666666;
+  border-radius: 5px;
+  background-color: #EEEEEE;
+  box-shadow: 5px 5px 5px #666666;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+}
+main .mainContainer .mainContent .container #announcements span, main .mainContainer .mainContent .container #absence span, main .mainContainer .mainContent .container #stickies span, main .mainContainer .mainContent .container #links span {
+  background-color: black;
+  color: #FAD312;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5vh;
+  font-size: larger;
+  font-weight: bold;
+  margin: -5px -5px 0px -5px;
+}
+main .mainContainer .mainContent .container #links img {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin: 2.5px;
+}
+main .mainContainer .mainContent .container #links img:hover {
+  width: 110%;
+  box-shadow: 0px 5px 15px #000000;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */

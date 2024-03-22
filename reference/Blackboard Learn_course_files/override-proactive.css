@@ -1,0 +1,137 @@
+.eesy-tab2:focus {
+  outline: 0px;
+}
+.eesy-tab2-container {
+	bottom: 135px;
+}
+
+.eesy-tab2-btn-handle {
+  color: #009C82;
+}
+
+.eesy-tab2-btn {
+  background-color: #009C82;
+}
+
+
+@media only screen and (max-width: 667px) and (min-width: 320px) {
+    .eesy-tab2-container {
+        position:fixed;
+        top:34px;
+        right: 118px;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 668px) {
+    .eesy-tab2-container {
+        position:fixed;
+        top:40px;
+      }
+    .eesy-tab2-btn {
+        height:40px;
+      }
+    .eesy-tab2-btn-text {
+      padding-top: 9.8px;
+    }
+    .eesy-tab2-btn-icon {
+      top: 8.5px;
+    }
+}
+
+.eesy__modal-scope .selector__option:hover {
+    color:#009C82 !important;
+}
+
+.eesy__modal-scope .selector__select {
+	color:#009C82;
+}
+
+.eesy__modal-scope .xbutton__close:before {
+    color: #fff !important;
+}
+
+.eesy__modal-scope .article a {
+    color: #009C82 !important;
+}
+
+.eesy__modal-scope .layout__header {
+  background-color: #009C82;
+}
+
+.eesy__modal-scope .section.___primary {
+  background-color: #009C82;
+} 
+
+.eesy__modal-scope .header__close:before {
+  color: white !important;
+}
+
+.eesy__modal-scope .header__back:before {
+  color: white !important;
+}
+
+.eesy__modal-scope .header__back:focus, 
+.eesy__modal-scope .header__close:focus {
+	background-color: transparent;
+}
+
+.eesy__modal-scope .filter__category {
+  background-color: #fff !important;
+  color: #000000 ;
+}
+
+.eesy__modal-scope .filter__category.___is-selected {
+  color: #fff !important;
+  background-color: #ce154f !important;
+}
+.eesy__modal-scope .filter__category.___is-focused {
+  background-color: #ce154f !important;
+  color: #fff !important;
+}
+
+.eesy__modal-scope .header__search:before {
+  color: #333333 !important;
+}
+.eesy__modal-scope .results__show-all {
+  color: #009C82 !important;	
+}
+
+.eesy__modal-scope .contact__button.___email:after {
+  color: #009C82;
+}
+
+.eesy__modal-scope .contact__button {
+  border-style: solid !important;
+  border-color: #009C82 !important;
+  border-width: 1px !important;
+  color: #009C82;
+}
+
+.eesy__modal-scope .contact__button.___email:after {
+  color: #009C82;
+  font-size: 17.0625px;
+}
+
+.eesy__modal-scope .contact__button.___call:after {
+  color: #009C82;
+  font-size: 24.375px;
+}
+
+.eesy__modal-scope .eesy__footer {
+  background-color: #333333;
+}
+
+.eesy__modal-scope .___headerButtonsIs-focused {
+  background-color: #009C82 !important;
+}
+.eesy__modal-scope .tag.___is-selected {
+  background-color: #009C82 !important;
+  border-color: #009C82 !important;
+}
+.eesy__modal-scope .quick-survey__answer_Sup.___positive.isSelected {
+  color: #009C82 !important;
+}
+
+.eesy__modal-scope .quick-survey__answer_Sup.___negative.isSelected {
+  color: #CE154F !important;
+}
+

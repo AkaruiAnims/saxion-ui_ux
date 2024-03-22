@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+}
+footer{
+}
+
+body {
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,f2f2f2+73,cecece+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 1%, rgba(242,242,242,1) 73%, rgba(206,206,206,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 1%,rgba(242,242,242,1) 73%,rgba(206,206,206,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 1%,rgba(242,242,242,1) 73%,rgba(206,206,206,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+          background-attachment: fixed;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 800px;
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    position:relative;
+
+}
+figure.logo{
+    position:fixed;
+    z-index: 0;
+    bottom:60px;
+    right:20px;
+}
+figure.logo img{
+    width:200px;
+}
+
+main{
+    width:690px;
+    margin-bottom: 567px;
+}
+nav{
+    width: 100px;
+/*    flex:1 1 190px;*/
+    text-align: center;
+    line-height:30px;
+    position:fixed;
+}
+nav h2{
+    line-height: 60px;
+    border-radius: 10px 0px 0px 0px;
+    background-color: #888888;
+    color:#EFEFEF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+
+
+nav a{
+    display:block;
+    font-size: 16px;
+    
+}
+nav a:nth-child(even){
+    background-color: #EEEEEE;
+
+}
+nav a:nth-child(odd){
+    background-color: #DFDFDF;
+
+}
+
+nav a:hover{
+/*    background-color: #FFFFFF;*/
+    text-decoration: underline
+
+}
+nav a.coaching:hover{
+/*        background-color: #FFFFFF;*/
+    text-decoration: underline
+
+}
+nav a.coaching{
+        background-color: #CFCFCF;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/*title*/
+main section.yearTitle {
+    line-height: 60px;
+    text-align: center;
+    border-radius: 0px 10px 0px 0px;
+    background-color: #888888;
+    color:#EFEFEF;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+
+.courseContainer{
+    margin-top: 10px;
+}
+section.yearTitle:nth-child(4),section.yearTitle:nth-child(6),section.yearTitle:nth-child(8) {
+    margin-top:30px;
+}
+
+.quartile, section.yearTitle {
+/*    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);*/
+
+}
+.quartile {
+    flex:1 1 30px;
+    text-align: center;
+    line-height: 30px;
+    margin:auto;
+
+}
+
+.module{
+    flex:1 1 100%;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.personalProject, .project, .module, .pathway{
+    display: flex;
+}
+.personalProject  section, .project section, .module section , .pathway section{
+    flex: 1 1 50px;
+    word-break: break-all;
+    border: 0.1px solid white;
+}
+
+.link{
+    position:relative;
+    height:30px;
+    width:100%;
+}
+.link  > a{
+    position:absolute;
+    width:100%;
+
+}
+
+.link > a:first-child {
+    background-color:#F5F5F5;
+    flex: 2 1 200px;
+}
+.link > a:hover:not(.disabled) {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    left:-1%;
+    width:102%;
+    z-index: 10;
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+.link > a:hover:not(.disabled) > section{
+/*    background-color:#F5F5F5;*/
+    text-decoration-line: underline;
+}
+
+.link> a > section{
+}
+/*course name*/
+.link> a > section:first-child {
+    background-color:#F5F5F5;
+    flex: 2 1 200px;
+}
+.personalProject section:first-child,
+.project section:first-child,
+.module section:first-child,
+.pathway section:first-child{
+    background-color:#F5F5F5;
+    flex: 2 1 200px;
+}
+
+.personalProject section:nth-child(2):not(.enabled),
+.project section:nth-child(2):not(.enabled),
+.module section:nth-child(2):not(.enabled),
+.pathway section:nth-child(2):not(.enabled),
+.personalProject section:nth-child(3):not(.enabled),
+.project section:nth-child(3):not(.enabled),
+.module section:nth-child(3):not(.enabled),
+.pathway section:nth-child(3):not(.enabled),
+.personalProject section:nth-child(4):not(.enabled),
+.project section:nth-child(4):not(.enabled),
+.module section:nth-child(4):not(.enabled),
+.pathway section:nth-child(4):not(.enabled){
+    background-image: linear-gradient(to right, rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0.75)),linear-gradient(to right, black 50%,#DDDDDD 50%), linear-gradient(to bottom, black 50%, #DDDDDD 50%);
+/*    background-color: #FAFAFA;*/
+    background-blend-mode:lighten,difference, normal;
+    opacity: 0.1;
+    background-size: 15px 15px;
+}
+
+.personalProject section:nth-child(2).enabled,
+.project section:nth-child(2).enabled,
+.module section:nth-child(2).enabled,
+.pathway section:nth-child(2).enabled{
+     background-color:#B3E5FC;
+}
+.personalProject section:nth-child(3).enabled,
+.project section:nth-child(3).enabled,
+.module section:nth-child(3).enabled,
+.pathway section:nth-child(3).enabled{
+    background-color:#D9FCDA;
+
+}
+.personalProject section:nth-child(4).enabled,
+.project section:nth-child(4).enabled,
+.module section:nth-child(4).enabled,
+.pathway section:nth-child(4).enabled{
+   
+        background-color:#FFCCD2;
+
+}
+
+.pathway section.title  {
+    background-color: #CFCFCF;
+    font-weight: 500;
+}
+
+/*Project*/
+a.project section.title{
+    background-color: #DFDFDF;
+    line-height: 30px;
+    
+}
+/*bootcamp*/
+a.bootcamp{
+    z-index: 100;
+    box-sizing: border-box;
+    border:1px solid white;
+    /* margin:10px 0; */
+}
+a.bootcamp section.title{
+    background-color: #dcdbba;
+    line-height: 30px;
+    
+}
+/*Personal Project*/
+a.personalProject section.title {
+    background-color: #EEEEEE;
+    line-height: 30px;
+}
+.disabled {
+    /*    pointer-events: none;*/
+    text-decoration: inherit;
+    cursor: default;
+    opacity: 0.4;
+}
+
+footer{
+    height:100px;
+}

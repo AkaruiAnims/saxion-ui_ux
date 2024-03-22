@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    // display: flex;
+    // flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+.active {
+    background-color: #009C87;
+    color: white !important;
+}
+
+.icon {
+        width: 20px;
+        // height: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        padding: auto;
+        margin: auto;
+    }
+
+header {
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+    border-bottom: 1px solid #666666;
+    height: 15vh;
+
+    section {
+        background-color: #666666;
+        width: 15vw;
+    }
+
+    .logo {
+        top: 5px;
+        left: 5px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .userSettings {
+        color: white;
+        font-size: small;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .topNav {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: right;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                padding: 10px;
+                margin: 0;
+                color: #009C87;
+                cursor: pointer;
+                font-style: bold;
+
+                &:hover {
+                    background-color: #009C87;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+
+main {
+    .navBody {
+        ul{
+            display: flex;
+            flex-direction: row;
+            border-bottom:0.5px solid #666666;
+
+            li {
+                padding: 10px 20px;
+                margin: 0;
+                color: #009C87;
+                cursor: pointer;
+                font-style: bold;
+                border-right: 0.5px solid #666666;
+
+                &:hover {
+                    background-color: #009C87;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .subNav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        list-style: none;
+        border-bottom: 0.5px solid #666666;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                padding: 20px;
+                margin: 0;
+                color: #009C87;
+                cursor: pointer;
+                font-weight: bold;
+                border-right:0.5px solid #666666;
+
+                &:hover {
+                    background-color: #009C87;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        background-color: #EEEEEE;
+        border: 0.5px solid #666666;
+        width: 15vw;
+        // padding: 5px;
+        font-size: small;
+
+        #asideTop{
+            background-color: #333333;
+            img {
+                float: right;
+            }
+        }
+
+        #asideBottom {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .asideNav {
+            display: flex;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                li {
+                    padding: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #009C87;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .courseNotice {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        padding: 10px;
+
+        p {
+            font-size: small;
+        }
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        justify-content: right;
+        gap: 50px;
+        padding: 10px;
+
+        .mainContent {
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            border: 0.5px solid #666666;
+            background-color: #EEEEEE;
+            // overflow: scroll;
+            // overflow-x: hidden;
+
+            .banner {
+                width: 100%;
+                height: 50px;
+                background-image: url('images/banner.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .linkCircle {
+                    width: auto;
+                    height: 45px;
+                    padding: 0 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        width: 6%; 
+                        z-index: 1;
+                        height: auto;
+                    }
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                gap: 20px;
+
+                #announcements, #absence, #stickies, #links {
+                    border: 0.5px solid #666666;
+                    border-radius: 5px;
+                    background-color: #EEEEEE;
+                    box-shadow: 5px 5px 5px #666666;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+                    margin: 5px;
+
+                    span {
+                        background-color: black;
+                        color: #FAD312;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        height: 5vh;
+                        font-size: larger;
+                        font-weight: bold;
+                        margin: -5px -5px 0px -5px;
+                    }
+                }
+
+                #links {
+                    img {
+                    align-self: center;
+                        width: 100%;
+                        height: auto;
+                        cursor: pointer;
+                        margin: 2.5px;
+                        
+                        &:hover {
+                            width: 110%;
+                            box-shadow: 0px 5px 15px #000000;
+                            z-index: 1;
+                        }
+                    }    
+                }
+
+            }
+
+
+        }
+    }
+
+}
