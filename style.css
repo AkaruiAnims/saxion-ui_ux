@@ -283,6 +283,9 @@ main .mainContentCourses section span {
   color: #EEEEEE;
   background-color: #888888;
 }
+main .mainContentCourses th {
+  text-align: center;
+}
 
 @keyframes showElement {
   from {
