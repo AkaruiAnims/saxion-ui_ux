@@ -9,6 +9,12 @@ body {
     box-sizing: border-box;
     // display: flex;
     // flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul{
@@ -138,6 +144,12 @@ main {
                     color: white;
                 }
             }
+
+            #selector {
+                position: absolute;
+                right: 0;
+                border: 0;
+            }
         }
     }
 
@@ -180,6 +192,7 @@ main {
                 li {
                     padding: 5px;
                     cursor: pointer;
+                    text-decoration: none;
 
                     &:hover {
                         background-color: #009C87;
@@ -244,7 +257,7 @@ main {
                     cursor: pointer;
 
                     &:hover {
-                        width: 6%; 
+                        width: 3%; 
                         z-index: 1;
                         height: auto;
                     }
@@ -303,6 +316,24 @@ main {
         }
     }
 
+    .mainContentCourses {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 25px;
+
+        section {
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: large;
+                text-align: center;
+                color: #EEEEEE;
+                background-color: #888888;
+            }
+        }
+    }
 }
 
 // animations
