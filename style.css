@@ -80,6 +80,7 @@ header .topNav ul li {
   padding: 10px;
   margin: 0;
   color: #009C87;
+  font-size: large;
   cursor: pointer;
   font-style: bold;
 }
@@ -97,6 +98,7 @@ main .navBody ul li {
   padding: 10px 20px;
   margin: 0;
   color: #009C87;
+  font-weight: bold;
   cursor: pointer;
   font-style: bold;
   border-right: 0.5px solid #666666;
@@ -137,7 +139,7 @@ main aside {
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: -12%;
+  left: -210px;
   background-color: #EEEEEE;
   border: 0.5px solid #666666;
   font-size: small;
@@ -284,7 +286,7 @@ main .mainContentCourses section span {
 
 @keyframes showElement {
   from {
-    left: -12%;
+    left: -210px;
   }
   to {
     left: 0;

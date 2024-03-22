@@ -85,6 +85,7 @@ header {
                 padding: 10px;
                 margin: 0;
                 color: #009C87;
+                font-size: large;
                 cursor: pointer;
                 font-style: bold;
 
@@ -109,6 +110,8 @@ main {
                 padding: 10px 20px;
                 margin: 0;
                 color: #009C87;
+                // font-size: large;
+                font-weight: bold;
                 cursor: pointer;
                 font-style: bold;
                 border-right: 0.5px solid #666666;
@@ -135,6 +138,7 @@ main {
                 padding: 20px;
                 margin: 0;
                 color: #009C87;
+                // font-size: larger;
                 cursor: pointer;
                 font-weight: bold;
                 border-right:0.5px solid #666666;
@@ -157,7 +161,7 @@ main {
         display: flex;
         flex-direction: column;
         position: fixed;
-        left: -12%;
+        left: -210px;
         background-color: #EEEEEE;
         border: 0.5px solid #666666;
         // width: 15vw;
@@ -339,7 +343,7 @@ main {
 // animations
 @keyframes showElement {
     from {
-        left: -12%;
+        left: -210px;
     }
 
     to {
