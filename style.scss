@@ -9,8 +9,7 @@ body {
     box-sizing: border-box;
     // display: flex;
     // flex-direction: column;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a {
@@ -44,6 +43,7 @@ button {
 
     &:hover {
         background-color: #ffd900;
+        color: #f4f4f4;
     }
 }
 
@@ -126,6 +126,7 @@ aside {
 
     &:hover {
         cursor: pointer;
+        border-color: #ffd900;
     }
 }
 
@@ -135,13 +136,21 @@ aside {
     align-items: center;
     text-align: center;
     padding-bottom: 1rem ;
+    fill: #f4f4f4;
+
+    &:hover {
+        cursor: pointer;
+        fill: #ffd900;
+    }
 }
 
 section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     span {
-        padding: 0 1rem ;
+        padding: 1rem 1rem ;
 
         ul {
             display: flex;
@@ -155,6 +164,7 @@ section {
                 font-weight: bold;
                 border: 1px solid #333131;
                 border-radius: 5px;
+                height: 25px;
 
                 &:hover {
                     background-color: #ffd900;
@@ -162,5 +172,59 @@ section {
                 }
             }
         }
+    }
+}
+
+.main-page{
+    display: flex; 
+    justify-content: space-around;
+    margin: auto;
+    flex:1;
+    overflow-y: hidden; //comment out later
+    gap:50px;
+    width: 80vw;
+
+    article{
+        // border: 1px solid #333131;
+        border-radius: 5px;
+        box-shadow: -10px 10px 5px #c0c0c09a;
+        padding: 1rem;
+        width: 80vw;
+        overflow-y: scroll;
+        flex:1;
+
+        img{
+            width: auto;
+            height: 100%;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+            border-bottom: 1px dashed #333131;
+            color: #ffd900;
+            text-shadow: 0px 0px 1px #000000;
+            font-stretch: bold;
+            font-size: 32px;
+        }
+    }
+}
+
+.main-button{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    padding: 1rem;
+    // border: 0.5px dotted #e9e5e5;
+    box-shadow: -10px 10px 5px #c0c0c09a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 25px;
+
+    &:hover {
+        background-color: #ffd900;
+        color: #f4f4f4;
     }
 }
