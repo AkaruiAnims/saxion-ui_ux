@@ -154,7 +154,7 @@ section {
 
         ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
             width: 100%;
 
@@ -228,3 +228,138 @@ section {
         color: #f4f4f4;
     }
 }
+
+ul {
+    a{
+        color: #000000;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.courses{
+    width: 80vw;
+    flex:1;
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    box-shadow: -10px 10px 5px #c0c0c09a;
+    padding: 5px;
+
+    ul{
+        li{
+            padding: 1rem;
+            border-bottom: 1px dashed #333131;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &:hover {
+                color: #f4f4f4;
+            }
+        }
+    }
+}
+
+.course-buttons{
+    padding: 25px 0;
+        li{
+            background-color: #ebebeb;
+                &:hover {
+                    background-color: #000000;
+                }
+        }
+}
+
+
+.engineer{
+    background-color: blue;
+        &:hover {
+            background-color: lightblue;
+        }
+}
+.engineer-active{
+    background-color: lightblue;
+    color:#f4f4f4;
+        &:hover {
+            background-color: lightblue;
+        }
+}
+
+.designer{
+    background-color: green;
+        &:hover {
+            background-color: lightgreen;
+        }
+}
+.designer-active{
+    background-color: lightgreen;
+    color:#f4f4f4;
+        &:hover {
+            background-color: lightgreen;
+        }
+}
+
+.artist{
+    background-color: red;
+        &:hover {
+            background-color: lightcoral;
+        }
+}
+.artist-active{
+    background-color: lightcoral;
+    color:#f4f4f4;
+        &:hover {
+            background-color: lightcoral;
+        }
+}
+
+.courses-container{
+    // padding: 25px;
+
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: 1px solid #333131;
+        width: 50%;
+        height: 5vh;
+        text-align: center;
+        background-color: lightgray;
+
+            &:hover {
+                background-color: #ffd900;
+                color: #f4f4f4;
+                cursor: pointer;
+            }
+    }
+
+        //make 2x2 evenly spaced and sized grid
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 15px 25px;
+
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #333131;
+                margin: auto;
+                width: 25%;
+                padding: 5%;
+                // height: 5.5rem;
+                background-color: lightgray;
+
+                &:hover {
+                    background-color: #ffd900;
+                    color: #f4f4f4;
+                    cursor: pointer;
+                }
+            }
+    }
+}
+    

@@ -8,114 +8,125 @@
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header class="headerContainer">
 
-        <img src="images/saxion_logo_new.png" alt="logo" class="logo">
-
-        <section class="userSettings">
-            <img src="images/userIcon.svg" alt="user" class="icon">
-            John Doe
-            <img src="images/showMore.png" alt="showMore" class="icon">
-
-            <!-- <section class="logout">
-                <img src="images/logout_1.png" alt="log-out" class="icon">
-            </section> -->
-        </section>
-
-        <nav class="topNav">
-            <ul>
-                <li>ACT</li>
-                <li>My Blackboard</li>
-                <li>Courses</li>
-                <li>Community</li>
-                <li>content Collection</li>
-                <li>Library</li>
-            </ul>
-        </nav> 
-    </header>
+    <div class="banner"></div>
+    
+    <nav>
+        <ul>
+            <li> NOTICES </li>
+            <li> BIM/ITSM/INF - HBO-IT/ICT </li>
+            <li class="active"> CMGT </li>
+            <li> CREATIVE BUSINESS </li>
+            <li> FTT - TCT/TEM </li>
+            <li> ACT INT </li>
+            <li> MASTER </li>
+            <li> LINK </li>
+        </ul>
+    </nav>
 
     <main>
-        <nav class="navBody">
+        <aside>
             <ul>
-                <li>NOTICES</li> <!-- originally lowercase -->
-                <li>BIM/ITSM/INF - HBO-IT/ICT</li>
-                <li class="active">CMGT</li>
-                <li>CREATIVE BUSINESS</li>
-                <li>FTT - TCT/TEM</li>
-                <li>ACT INT</li>
-                <li>MASTER</li>
-                <li>LINK</li>
+                <li> My Blackboard  </li>
+                <li> Community </li>
+                <li> Content Collection </li>
+                <li> Library </li>
             </ul>
-        </nav>
 
-        <nav class="subNav">
-            <ul>
-                <a href="index.html"><li>ANNOUNCEMENTS</li></a>
-                <a href="courses.html"><li class="active">COURSE OVERVIEW</li></a>
-                <li id="selector"><img src="images/showMore.png" alt="showMore" class="icon"> 2023-2024</li>
-            </ul>
-        </nav>
+            <div class="user-icon">
+            </div>
 
-        <div class="mainContentCourses">
-            <section class="courseLeft">
-                <span>JUMP TO</span>
-                <div>STUDY <br> COACHING</div>
+            <div class="settings-button">
+                <i> <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+                </svg> </i>
+            </div>
+        </aside>
+
+        <section>
+            <span>
                 <ul>
-                    <li>YEAR 1</li>
-                    <li>YEAR 2</li>
-                    <li>YEAR 3</li>
-                    <li>YEAR 4</li>
+                    <a href="index.html">   <li>     ANNOUNCEMENTS       </li></a>
+                    <a href="#">            <li>                    STICKIES & LINKS    </li></a>
+                    <a href="courses.html"> <li class="active">                    COURSE OVERVIEW     </li></a>
                 </ul>
-            </section>
+            </span>
+            
+            <span><hr/></span>
+            
+            <span class="main-page">
+                <div class="main-button">
+                    <
+                </div>
 
-            <section class="courseRight">
-                <span>YEAR 1</span>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Term 1</th>
-                            <th>Engineer</th>
-                            <th>Designer</th>
-                            <th>Artist</th>
-                        </tr>
-                        <tr>
-                            <td>Project Boarding Call</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Communication</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr><tr>
-                            <td>Design Thinking</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr><tr>
-                            <td>Imagery</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr><tr>
-                            <td>Programming Basics (Engineer)</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr><tr>
-                            <td>Programming Basics (others)</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                </table>
-            </section>
-        </div>
+                <div class="courses">
+                    <ul class="role-buttons">
+                        <li class="engineer-active"> Engineer </li>
+                        <li class="designer"> Designer </li>
+                        <li class="artist"> Artist </li>
+                    </ul>
 
+                    <ul class="course-buttons">
+                        <li> Year 1 ↓ </li>
+                        <li> Term 1 ↓ </li>
+                    </ul>
+
+                    <div class="courses-container">
+                        <div class="project">Project</div>
+                        <div class="container">
+                            <div>Course 1</div>
+                            <div>Course 2</div>
+                            <div>Course 3</div>
+                            <div>Course 4</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-button">
+                    >
+                </div>
+            </span>
+        </section>
     </main>
+    <!-- logo
+    John Doe
 
+    CMGT Announcements 
+    VT Enschede(2023-2024)
+
+    General / Algemeen
+    Online Classes
+    Announcements / Mededelingen
+    Year 3&4 information
+
+    ANNOUNCEMENTS
+    Text 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at, enim maiores cum quidem aspernatur in minima deserunt atque ducimus natus exercitationem assumenda provident esse, hic repellendus et laudantium voluptatem.
+
+    ABSENCE
+    John Doe
+
+    STICKIES
+    EXAM PLAN
+    An overview of all the exams for the year 2023-2024
+    TEACHER OVERVIEW
+    Overview of CMGT Teachers and Abbreviations
+    IMPORTANT LINKS
+    Important links for CMGT Students.
+    CURICULUM CONVERSIONS
+    Overview of CMGT courses that replace ANT/KNT/GDP/GE courses.
+    EER 2021-2022
+    Education and Examination Regulations 2021-2022
+    LINKED IN LEARNING
+    How to use linked in learning.
+    GENERAL INFORMATION YEAR 3&4
+    Recording & presentation about CMGT year 3&4
+    EDUCATION EVALUATION
+    Module Evaluations Year 1-4
+
+    LINKS -->
 </body>
 </html>

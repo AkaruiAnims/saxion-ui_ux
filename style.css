@@ -139,7 +139,7 @@ section span {
 }
 section span ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
@@ -202,4 +202,124 @@ section span ul li:hover {
 .main-button:hover {
   background-color: #ffd900;
   color: #f4f4f4;
+}
+
+ul a {
+  color: #000000;
+}
+
+.hidden {
+  display: none;
+}
+
+.courses {
+  width: 80vw;
+  flex: 1;
+  border: 1px solid #8b8b8b;
+  border-radius: 5px;
+  box-shadow: -10px 10px 5px rgba(192, 192, 192, 0.6039215686);
+  padding: 5px;
+}
+.courses ul li {
+  padding: 1rem;
+  border-bottom: 1px dashed #333131;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.courses ul li:hover {
+  color: #f4f4f4;
+}
+
+.course-buttons {
+  padding: 25px 0;
+}
+.course-buttons li {
+  background-color: #ebebeb;
+}
+.course-buttons li:hover {
+  background-color: #000000;
+}
+
+.engineer {
+  background-color: blue;
+}
+.engineer:hover {
+  background-color: lightblue;
+}
+
+.engineer-active {
+  background-color: lightblue;
+  color: #f4f4f4;
+}
+.engineer-active:hover {
+  background-color: lightblue;
+}
+
+.designer {
+  background-color: green;
+}
+.designer:hover {
+  background-color: lightgreen;
+}
+
+.designer-active {
+  background-color: lightgreen;
+  color: #f4f4f4;
+}
+.designer-active:hover {
+  background-color: lightgreen;
+}
+
+.artist {
+  background-color: red;
+}
+.artist:hover {
+  background-color: lightcoral;
+}
+
+.artist-active {
+  background-color: lightcoral;
+  color: #f4f4f4;
+}
+.artist-active:hover {
+  background-color: lightcoral;
+}
+
+.courses-container .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid #333131;
+  width: 50%;
+  height: 5vh;
+  text-align: center;
+  background-color: lightgray;
+}
+.courses-container .project:hover {
+  background-color: #ffd900;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.courses-container .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 15px 25px;
+}
+.courses-container .container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333131;
+  margin: auto;
+  width: 25%;
+  padding: 5%;
+  background-color: lightgray;
+}
+.courses-container .container div:hover {
+  background-color: #ffd900;
+  color: #f4f4f4;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
