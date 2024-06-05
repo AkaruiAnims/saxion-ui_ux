@@ -145,7 +145,7 @@ section {
 
         ul {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             width: 100%;
 
@@ -158,6 +158,7 @@ section {
 
                 &:hover {
                     background-color: #ffd900;
+                    color: #f4f4f4;
                 }
             }
         }

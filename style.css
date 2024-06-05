@@ -131,7 +131,7 @@ section span {
 }
 section span ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -144,4 +144,5 @@ section span ul li {
 }
 section span ul li:hover {
   background-color: #ffd900;
+  color: #f4f4f4;
 }/*# sourceMappingURL=style.css.map */
