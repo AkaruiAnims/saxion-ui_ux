@@ -78,7 +78,6 @@ nav ul li:hover {
 
 main {
   display: flex;
-  flex-wrap: wrap;
   height: 75vh;
 }
 
@@ -127,39 +126,22 @@ aside ul li:hover {
 section {
   width: 100%;
 }
-section ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
+section span {
+  padding: 0 1rem;
 }
-section ul li {
-  background-color: #f4f4f4;
-  margin: 1rem;
-  padding: 1rem;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+section span ul {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-}
-section ul li img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
 }
-section ul li h3 {
-  margin: 1rem 0;
-}
-section ul li p {
-  margin: 1rem 0;
-}
-section ul li button {
-  background-color: #ffd900;
-  color: white;
-  padding: 0.5rem 1rem;
+section span ul li {
+  padding: 1rem 8rem;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #333131;
   border-radius: 5px;
+}
+section span ul li:hover {
+  background-color: #ffd900;
 }/*# sourceMappingURL=style.css.map */

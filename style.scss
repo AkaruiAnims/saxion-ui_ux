@@ -87,7 +87,6 @@ nav {
 
 main {
     display: flex;
-    flex-wrap: wrap;
     height: 75vh;
 }
 
@@ -139,46 +138,28 @@ aside {
 }
 
 section {
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 1rem;
+    width: 100%;
 
-        li {
-            background-color: #f4f4f4;
-            margin: 1rem;
-            padding: 1rem;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    span {
+        padding: 0 1rem ;
+
+        ul {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            width: 100%;
 
-            img {
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-
-            h3 {
-                margin: 1rem 0;
-            }
-
-            p {
-                margin: 1rem 0;
-            }
-
-            button {
-                background-color: #ffd900;
-                color: white;
-                padding: 0.5rem 1rem;
+            li {
+                padding: 1rem 8rem;
+                cursor: pointer;
+                font-weight: bold;
+                border: 1px solid #333131;
                 border-radius: 5px;
+
+                &:hover {
+                    background-color: #ffd900;
+                }
             }
         }
     }
-
-    width: 100%;
 }
