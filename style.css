@@ -20,7 +20,7 @@ ul {
 }
 
 .active {
-  background-color: #009C87;
+  background-color: #ffd900;
   color: white !important;
 }
 
@@ -32,266 +32,134 @@ ul {
   margin: auto;
 }
 
-header {
-  justify-content: right;
-  align-items: right;
-  text-align: right;
-  justify-content: right;
-  border-bottom: 1px solid #666666;
-  height: 15vh;
-}
-header .logo {
-  top: 5px;
-  left: 5px;
-  float: left;
-  position: relative;
+button {
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #f4f4f4;
 }
-header .userSettings {
-  background-color: #666666;
-  color: white;
-  font-size: small;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  gap: 50px;
-}
-header .topNav {
-  position: absolute;
-  top: 10vh;
-  right: 0;
-}
-header .topNav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: right;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-header .topNav ul li {
-  padding: 10px;
-  margin: 0;
-  color: #009C87;
-  font-size: large;
-  cursor: pointer;
-  font-style: bold;
-}
-header .topNav ul li:hover {
-  background-color: #009C87;
-  color: white;
+button:hover {
+  background-color: #ffd900;
 }
 
-main .navBody ul {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 0.5px solid #666666;
-}
-main .navBody ul li {
-  padding: 10px 20px;
-  margin: 0;
-  color: #009C87;
-  font-weight: bold;
-  cursor: pointer;
-  font-style: bold;
-  border-right: 0.5px solid #666666;
-}
-main .navBody ul li:hover {
-  background-color: #009C87;
-  color: white;
-}
-main .subNav {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  list-style: none;
-  border-bottom: 0.5px solid #666666;
-}
-main .subNav ul {
-  display: flex;
-  flex-direction: row;
-}
-main .subNav ul li {
-  padding: 20px;
-  margin: 0;
-  color: #009C87;
-  cursor: pointer;
-  font-weight: bold;
-  border-right: 0.5px solid #666666;
-}
-main .subNav ul li:hover {
-  background-color: #009C87;
-  color: white;
-}
-main .subNav ul #selector {
-  position: absolute;
-  right: 0;
-  border: 0;
-}
-main aside {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: -210px;
-  background-color: #EEEEEE;
-  border: 0.5px solid #666666;
-  font-size: small;
-}
-main aside #asideTop {
-  background-color: #333333;
-}
-main aside #asideTop img {
-  float: right;
-}
-main aside #asideBottom {
-  display: flex;
-  flex-direction: row;
-}
-main aside .asideNav {
-  display: flex;
-  padding: 5px;
-  padding-left: 0;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-main aside .asideNav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  text-align: left;
-}
-main aside .asideNav ul li {
-  padding: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-main aside .asideNav ul li:hover {
-  background-color: #009C87;
-  color: white;
-}
-main aside:hover {
-  z-index: 1;
-  left: 0;
-  animation-name: showElement;
-  animation-duration: 3s;
-}
-main .courseNotice {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  padding: 10px;
-}
-main .courseNotice p {
-  font-size: small;
-}
-main .mainContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: right;
-  justify-content: right;
-  gap: 50px;
-  padding: 10px;
-}
-main .mainContainer .mainContent {
-  display: flex;
-  flex-direction: column;
-  border: 0.5px solid #666666;
-  background-color: #EEEEEE;
-}
-main .mainContainer .mainContent .banner {
-  width: 100%;
-  height: 50px;
+.banner {
   background-image: url("images/banner.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  margin-bottom: 20px;
-}
-main .mainContainer .mainContent .banner .linkCircle {
-  width: auto;
-  height: 45px;
-  padding: 0 15px;
-  cursor: pointer;
-}
-main .mainContainer .mainContent .banner .linkCircle:hover {
-  width: 3%;
-  z-index: 1;
-  height: auto;
-}
-main .mainContainer .mainContent .container {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  gap: 20px;
-}
-main .mainContainer .mainContent .container #announcements, main .mainContainer .mainContent .container #absence, main .mainContainer .mainContent .container #stickies, main .mainContainer .mainContent .container #links {
-  border: 0.5px solid #666666;
-  border-radius: 5px;
-  background-color: #EEEEEE;
-  box-shadow: 5px 5px 5px #666666;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  margin: 5px;
-}
-main .mainContainer .mainContent .container #announcements span, main .mainContainer .mainContent .container #absence span, main .mainContainer .mainContent .container #stickies span, main .mainContainer .mainContent .container #links span {
-  background-color: black;
-  color: #FAD312;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 5vh;
-  font-size: larger;
-  font-weight: bold;
-  margin: -5px -5px 0px -5px;
-}
-main .mainContainer .mainContent .container #links img {
-  align-self: center;
+  height: 15vh;
   width: 100%;
-  height: auto;
-  cursor: pointer;
-  margin: 2.5px;
-}
-main .mainContainer .mainContent .container #links img:hover {
-  width: 110%;
-  box-shadow: 0px 5px 15px #000000;
-  z-index: 1;
-}
-main .mainContentCourses {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 25px;
-}
-main .mainContentCourses section span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
-  text-align: center;
-  color: #EEEEEE;
-  background-color: #888888;
-}
-main .mainContentCourses th {
-  text-align: center;
 }
 
-@keyframes showElement {
-  from {
-    left: -210px;
-  }
-  to {
-    left: 0;
-  }
+nav {
+  align-items: center;
+  background-color: #181818;
+  color: white;
+  padding: 0 1rem;
+  height: 10vh;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: #ffd900;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 75vh;
+}
+
+aside {
+  color: #f4f4f4;
+  height: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+}
+aside ul {
+  justify-content: center;
+}
+aside ul li {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+aside ul li:hover {
+  background-color: #ffd900;
+}
+
+.user-icon {
+  background-image: url("images/userIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #f4f4f4;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+.user-icon:hover {
+  cursor: pointer;
+}
+
+.settings-button {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+section {
+  width: 100%;
+}
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+section ul li {
+  background-color: #f4f4f4;
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section ul li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+section ul li h3 {
+  margin: 1rem 0;
+}
+section ul li p {
+  margin: 1rem 0;
+}
+section ul li button {
+  background-color: #ffd900;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
